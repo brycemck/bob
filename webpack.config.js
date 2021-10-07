@@ -1,6 +1,8 @@
 const isDevelopment = process.env.NODE_ENV === 'development';
 
 const path = require('path');
+const webpack = require('webpack');
+
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -19,6 +21,10 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/index.html'
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
     })
   ],
   devServer: {

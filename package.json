@@ -12,8 +12,10 @@
   "author": "Bryce McKenney",
   "license": "ISC",
   "dependencies": {
+    "jquery": "^3.6.0",
     "lodash": "^4.17.21",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "css-loader": "^6.3.0",
