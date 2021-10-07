@@ -1,0 +1,30 @@
+{
+  "name": "bob",
+  "version": "0.0.0",
+  "description": "Custom Sonos and smart home controller to be displayed on a 4\" touchscreen square.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "build": "npx webpack",
+    "watch": "npx webpack --watch",
+    "serve": "npx webpack server --open"
+  },
+  "author": "Bryce McKenney",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "css-loader": "^6.3.0",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.4.2",
+    "node-sass": "^6.0.1",
+    "sass": "^1.42.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.58.0",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1"
+  }
+}
